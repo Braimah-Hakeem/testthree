@@ -492,21 +492,26 @@ footer{
     font-size: 2rem;
 }
 
-.footer-content li{
+.footer-info li{
     list-style: none;
 }
 
-.footer-content a{
+.footer-info a{
     text-decoration: none;
     color: black;
     font-size: 1.4rem;
 }
 
-.footer-content a:hover,
-.footer-content a:focus{
+.footer-info a:hover,
+.footer-info a:focus{
     border-bottom: #F1C40F 2px solid;
     color: #F1C40F;
     cursor: pointer;
+}
+
+.footer-content a .logo:hover,
+.footer-content a .logo:focus{
+    border: none;
 }
 
 .socialMedia{
