@@ -1,0 +1,661 @@
+@mixin displayFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    letter-spacing: .5;
+}
+
+h1,
+h2,
+h3 {
+    color: #F1C40F;
+}
+
+.knowUs h2,
+.philosophy h3,
+.apartments h2,
+.contactUs h2 {
+    font-size: 2rem;
+}
+
+.light-text {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+
+.fullWidth{
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#mainCarousel {
+    height: 525px;
+    margin-top: 0;
+}
+
+.mainCarouselContent {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.mainOne {
+    display: flex;
+    height: 525px;
+}
+
+.mainOneHeading {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.mainOneHeading h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 4rem;
+}
+
+.wgHome {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.mainOneSide {
+    width: 55%;
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
+.mainOneSide p{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.container,
+.footer-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: rgb(245, 243, 243);
+} 
+
+.nav {
+    @include displayFlex();
+    padding-left: 75px;
+    padding-right: 75px;
+}
+  
+.logo {
+    width: 250px;
+}
+
+.nav-items {
+    width: 900px;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-items ul {
+    @include displayFlex();
+}
+
+.nav-items li {
+    list-style: none;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.nav-items a:hover,
+.nav-items a:focus {
+    color: #F1C40F;
+    border-bottom: #F1C40F 2px solid;
+}
+
+.carouselContent {
+    margin: 0 auto;
+}
+
+  .coverImg1{
+      background-image: url(/IMAGES/2/16C5D9DC-0ED1-4A62-A39E-AB25E9701316.jpg);
+  }
+  
+  .coverImg2 p,
+  .coverImg3 p  {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: flex;
+    padding-left: 78px;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .coverImg2 p{
+    background-image: url(/IMAGES/Constrction-image_slide.jpg);
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.quality {
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.coverImg3 p{
+    background-image: url(/IMAGES/Remodelling-image.jpg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #000;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.coverImg1 img{
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+  
+  /* Faint animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  .amd{
+    display: flex;
+    align-items: center;
+  }
+
+
+// .coverImg {
+//     height: 400px;
+//     max-width: 1000px;
+//     border-radius: 20px;
+//     // position: relative;
+//     margin-left: -20px;
+//     z-index: -1;
+// }
+
+
+
+
+.aboutUs {
+    display: flex;
+    flex-direction: column
+}
+
+.aboutUs h2{
+    font-size: 2.5rem;
+}
+
+.aboutUs h3 {
+    font-size: 2rem;
+}
+
+.aboutUs h2,
+.aboutUs h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.aboutUs p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+.knowUs {
+    width: 70%
+}
+
+.philosophy {
+    width: 70%;
+    margin-left: 30%
+}
+
+.apartments h2{
+    font-size: 2.5rem;
+}
+
+.apartments p{
+    font-size: 1.4rem;
+}
+
+.apartments {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.apartmentsIntro {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.apartment-box {
+    width: 380px;
+}
+
+.apartment-box p,
+.apartment-box h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.apartment-box img {
+    border-radius: 20px;
+    margin-bottom: 10px
+}
+
+.viewApartments {
+    margin-left: 0;
+    margin-top: 50px;
+}
+
+.check-btn {
+    background-color: #F1C40F;
+    text-decoration: none;
+    color: rgb(26, 21, 21);
+    padding:10px 20px ;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 30px;
+}
+
+.check-btn:hover,
+.check-btn:focus {
+    background-color: rgb(219, 218, 218);
+}
+
+.homesFeatures {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainFeatures {
+    border-right: 3px solid rgb(226, 225, 225);
+    width: 250px;
+    margin: 0;
+    padding: 0;
+
+}
+
+#mainFeatures ul {
+    margin: 0;
+    padding: 0;
+}
+
+#mainFeatures li {
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+#mainFeatures a {
+    text-decoration: none;
+    color: black;
+}
+
+#mainFeatures a:hover,
+#mainFeatures a:focus {
+    border-bottom: #F1C40F 2px solid;
+    color: #F1C40F;
+}
+
+#listFeatures {
+    width: 950px;
+    margin-right: 20px;
+}
+
+
+.itemBox {
+    display: flex;
+    align-items: center;
+    padding: 6.5px;
+    margin-left: 10px;
+    width: 905px;
+    
+}
+
+.careItem {
+    display: flex;
+    align-items: center;
+    // margin-right: 60px;
+    padding: 4px;
+    width: 223px;
+}
+
+.careItem p{
+    margin: 0;
+    padding: 0;
+}
+
+.careItemImg {
+    margin-right: 10px;
+}
+
+
+.itemBoxHidden {
+    display: none;
+}
+
+.itemBoxVisible {
+    display: flex;
+}
+
+.check-apt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.check-apt P{
+    font-size: 1.4rem;
+}
+
+.contactUs {
+    margin: 30px 0;
+}
+
+.contactUs h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+.contactItems {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactBox {
+    width: 300px; 
+    padding: 20px 10px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.contactBoxItem {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contactBoxItem img{
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    transform: scale(1);
+    transition: 3ms;
+}
+
+.contactBoxItem img:hover{
+    transform: scale(1.1);
+}
+
+
+.contactBoxItem p{
+    font-size: 1.4rem;
+}
+
+.img-color {
+    color: yellow;
+}
+
+.map {
+    padding: 20px;
+    background-color: rgb(245, 243, 243);
+}
+
+footer{
+    background-color: rgb(245, 243, 243);
+    padding:30px 20px;
+}
+
+.footer{
+    background-color: rgb(245, 243, 243);
+    padding:30px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.footer-content{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info{
+    display: flex;
+}
+
+.footer-info h3{
+    font-size: 2rem;
+}
+
+.footer-content li{
+    list-style: none;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.footer-content a:hover,
+.footer-content a:focus{
+    border-bottom: #F1C40F 2px solid;
+    color: #F1C40F;
+    cursor: pointer;
+}
+
+.socialMedia{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia p{
+    font-size: 1.4rem;
+}
+
+.sm-Icons{
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.instagram,
+.faceook{
+    margin-left: 10px;
+    transform: scale(1);
+    transition: 3ms;
+}
+
+.instagram:hover,
+.faceook:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.devName {
+    border-top: 2px dotted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: 000;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+//   height: 450px;
+//   width: 400px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+/* The Modal (background) */
+
+.modal,
+.modal2,
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content{
+  background-color: #fefefe;
+  margin: 10px auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.2s
+}
+
+/* The Close Button */
+.close,
+.close2,
+.close3 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close2:hover,
+.close3:hover,
+.close:focus,
+.close2:focus,
+.close3:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+  
